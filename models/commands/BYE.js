@@ -13,11 +13,11 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("bye") ||
-     react.includes("BYE") || react.includes("Bye") || react.includes("अलविदा") ||
+     react.includes("BYE") || react.includes("Bye") || react.includes("by") ||
 react.includes("byyy") ||
 react.includes("byy")) {
     var msg = {
-        body: `𝐁𝐘𝐄 𝐁𝐘𝐄 🙋‍♂ 𝐓𝐀𝐊𝐄 𝐂𝐀𝐑𝐄 𝐁𝐀𝐁𝐔 😇`,attachment: fs.createReadStream(__dirname + `/ARIF-BABU/BYE.gif`)
+        body: `𝐁𝐘𝐄 𝐁𝐘𝐄 🙋‍♂ 𝐓𝐀𝐊𝐄 𝐂𝐀𝐑𝐄 𝐁𝐀𝐁𝐔 😇`,attachment: fs.createReadStream(__dirname + `/TAHA-BABU/BYE.gif`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙋", event.messageID, (err) => {}, true)
