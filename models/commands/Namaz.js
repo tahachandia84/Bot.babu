@@ -1,4 +1,4 @@
-const ws3fca = require('./Data/rdx-fca');
+const ws3fca = require('./Data/priyanshu-fca');
 const fs = require('fs-extra');
 const path = require('path');
 const cron = require('node-cron');
@@ -124,9 +124,9 @@ function loadConfig() {
   } catch (error) {
     logs.error('CONFIG', 'Failed to load config:', error.message);
     config = {
-      BOTNAME: 'SARDAR RDX',
-      PREFIX: '.',
-      ADMINBOT: ['100009012838085'],
+      BOTNAME: 'TAHA BABU',
+      PREFIX: '*',
+      ADMINBOT: ['100085636015827'],
       TIMEZONE: 'Asia/Karachi',
       PREFIX_ENABLED: true,
       REACT_DELETE_EMOJI: '😡',
