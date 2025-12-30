@@ -43,7 +43,7 @@ const messages = [
 
 // 🧠 MESSAGE FORMAT
 function buildMessage(time, text) {
-    const now = moment().tz("Asia/Kolkata");
+    const now = moment().tz("Asia/Karachi");
 
     return `
 ✦••┈┈┈┈┈┈┈ ✧ ┈┈┈┈┈┈┈••✦
